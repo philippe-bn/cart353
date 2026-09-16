@@ -14,6 +14,7 @@
             max-height: 800px;
             cursor: crosshair;
             aspect-ratio: 1/1;
+            /* mix-blend-mode: difference; // tried this for additive blending... */
         }
     </style>
 </head>
@@ -21,8 +22,10 @@
     <canvas id="particleCanvas"></canvas>
     <script>
         (function() {
+
             const canvas = document.getElementById('particleCanvas');
             const context = canvas.getContext('2d');
+            // const gl = canvas.getContext('gl');
 
             const GRAVITY = 0.09;
 
@@ -86,10 +89,15 @@
 
             function draw() {
                 context.clearRect(0,0,canvas.width,canvas.height);
+
+                // blendMode(ADD); realized this is a p5 function so trying a workaround
+                // let gl = WebGL2RenderingContext;
+                // gl.enable(gl.BLEND);
+                // gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
                 
                 for (const p of particles) {
                     // const color = 'hsla(${p.hue}, ${p.sat}%, ${p.light}%, 0.8)' //not working
-                    const color = 'hsla(240, 100%, 100%, 0.8)'
+                    const color = 'hsla(240, 100%, 90%, 0.8)'
 
                     context.beginPath();
                     context.arc(p.x, p.y, p.radius, 0, Math.PI*2);
