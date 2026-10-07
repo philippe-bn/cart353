@@ -13,3 +13,7 @@ I also met with someone on Facebook Marketplace who sold me a thermal receipt pr
 - It is able to feed paper.
 - It requires a USB cable which I would need to find (USB to USB), and I don't know if this will be enough to set up the connection.
 - I will need to ask Emile if he can help me "jailbreak" it, like he did with his.
+
+**07/10/26**
+![alt text](image.png) Succeeded at running HTML documentation of repo.
+![alt text](image-1.png) The repo indicates what each file accomplishes.
