@@ -15,5 +15,13 @@ I also met with someone on Facebook Marketplace who sold me a thermal receipt pr
 - I will need to ask Emile if he can help me "jailbreak" it, like he did with his.
 
 **07/10/26**
-![alt text](image.png) Succeeded at running HTML documentation of repo.
-![alt text](image-1.png) The repo indicates what each file accomplishes.
+![alt text](/project/references/hb-html.png) Succeeded at running HTML documentation of repo.
+![alt text](/project/references/hb-html-filelist.png) The repo indicates what each file accomplishes.
+
+**10/10/26**
+*RESEARCH & DEVELOPMENT*
+I met with Sabine on Saturday October 10th in the Computation Lab to discuss my project.
+- I installed an ANSI C compiler.
+- I installed Chocolatey.
+- I installed the programs needed to run the C code.
+- I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using this instead.
