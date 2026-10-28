@@ -25,3 +25,6 @@ I met with Sabine on Saturday October 10th in the Computation Lab to discuss my 
 - I installed Chocolatey.
 - I installed the programs needed to run the C code.
 - I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using this instead.
+
+https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html
+https://www.scaler.com/topics/matplotlib/save-a-plot-in-matplotlib/
