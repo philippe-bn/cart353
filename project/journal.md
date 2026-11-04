@@ -1,8 +1,8 @@
-**30/09/26**
-I presented the proposal for my project.
+**30/09/26** <br>
+I presented the proposal for my project. <br>
 
-**06/10/26**
-*RESEARCH & DEVELOPMENT*
+**06/10/26** <br>
+*RESEARCH & DEVELOPMENT* <br>
 This week, I started with research about the various algorithms for texture generation. 
 - I read the *Textures* text [here](https://visionbook.mit.edu/textures.html). 
 - I identified the Heeger-Bergen Texture Synthesis algorithm as one I would want to work with and dive deeper into.
