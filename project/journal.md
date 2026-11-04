@@ -10,6 +10,7 @@ This week, I started with research about the various algorithms for texture gene
 For the next steps: <br>
 - I want to check if using this repo would be pertinent.
 - I can run basic tests with the algorithm, identifying what each stage of the process affects in the final outcome and where there is space for input data / iteration / bias. <br>
+
 *PHYSICAL COMPUTING* <br>
 I also met with someone on Facebook Marketplace who sold me a thermal receipt printer (BTP-R880NP) for 70$. <br>
 - It turns on when plugged in and had a paper roll inside of it already.
