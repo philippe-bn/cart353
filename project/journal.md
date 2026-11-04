@@ -29,6 +29,10 @@ I met with Sabine on Saturday October 10th in the Computation Lab to discuss my 
 - I installed the programs needed to run the C code.
 - I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using this instead. (https://colab.research.google.com/drive/1y-l8SEa-ALraDgbai5WavAYTDjKbg1AI?usp=sharing)
 
+**14/10/26**
+*READING WEEK*
+I worked on my project with Sabine early on in reading week so I figured I would keep experimenting when I returned.
+
 **21/10/26**
 *RESEARCH & DEVELOPMENT*
 I implemented the Python implementation of the Heeber Bergen Texture Analysis Synthesis algorithm.
@@ -37,6 +41,7 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 
 
 **28/10/26**
+*IDEATION*
 This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use.
 
 **04/11/26**
