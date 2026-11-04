@@ -54,7 +54,10 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
 # sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')  # Replace with a valid URL or file path
 # sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')  # Replace with a valid URL or file path
 # sample_image = load_image('synthesized.png')  # Replace with a valid URL or file path
-sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')  # Replace with a valid URL or file path
+# sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')  # Replace with a valid URL or file path
+# sample_image = load_image('concrete-2316571_1280.jpg')
+# sample_image = load_image('istockphoto-481248302-612x612.jpg')
+sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp')
 
 sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity, 2.5 seconds
 # sample_image = transform.resize(sample_image, (512, 512))  # Resize for simplicity, testing higher resize, 7.5 seconds
@@ -68,7 +71,7 @@ original_pyramid = build_steerable_pyramid(sample_image, 2, 4)
 
 # # the next function plots the output of all the filters
 #pt.pyrshow(original_pyramid.pyr_coeffs)
-Niterations = 10
+Niterations = 10 # 10 with basic size is 2.5 seconds, 100 is 10 seconds (so 4x longer)
 synthesized = synthesis(sample_image, Niterations)
 # Display results
 plt.figure(figsize=(12, 6))
