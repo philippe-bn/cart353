@@ -1,3 +1,6 @@
+**30/09/26**
+I presented the proposal for my project.
+
 **06/10/26**
 *RESEARCH & DEVELOPMENT*
 This week, I started with research about the various algorithms for texture generation. 
@@ -24,7 +27,17 @@ I met with Sabine on Saturday October 10th in the Computation Lab to discuss my 
 - I installed an ANSI C compiler.
 - I installed Chocolatey.
 - I installed the programs needed to run the C code.
-- I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using this instead.
+- I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using this instead. (https://colab.research.google.com/drive/1y-l8SEa-ALraDgbai5WavAYTDjKbg1AI?usp=sharing)
 
-https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html
-https://www.scaler.com/topics/matplotlib/save-a-plot-in-matplotlib/
+**21/10/26**
+*RESEARCH & DEVELOPMENT*
+I implemented the Python implementation of the Heeber Bergen Texture Analysis Synthesis algorithm.
+- I implemented a way to save the generated texture using matplotlib's imgsave function: I read about this at https://www.scaler.com/topics/matplotlib/save-a-plot-in-matplotlib/
+- I tried to implement a feedback process where the generated texture image reenters the algorithm: it wasn't working because the image was RGBA instead of RGB, so I read about matplotlib and skimage (https://www.geeksforgeeks.org/python/reading-images-in-python/, https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html), and added an import for rgba2rgb from skimage
+
+
+**28/10/26**
+This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use.
+
+**04/11/26**
+I presented my research and work in progress.

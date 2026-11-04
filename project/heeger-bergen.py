@@ -56,8 +56,8 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
 # sample_image = load_image('synthesized.png')  # Replace with a valid URL or file path
 sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')  # Replace with a valid URL or file path
 
-# sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity
-sample_image = transform.resize(sample_image, (1024, 1024))  # Resize for simplicity, testing higher resize
+sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity, 2.5 seconds
+# sample_image = transform.resize(sample_image, (512, 512))  # Resize for simplicity, testing higher resize, 7.5 seconds
 
 # plt.imshow(sample_image, cmap='gray')
 # plt.show()
