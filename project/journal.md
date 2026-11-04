@@ -40,9 +40,9 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 - I implemented a way to save the generated texture using matplotlib's imgsave function: I read about this [here](https://www.scaler.com/topics/matplotlib/save-a-plot-in-matplotlib/)
 - I tried to implement a feedback process where the generated texture image reenters the algorithm: it wasn't working because the image was RGBA instead of RGB, so I read about matplotlib and skimage [here](https://www.geeksforgeeks.org/python/reading-images-in-python/), and [here](https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html), and added an import for rgba2rgb from skimage
 
-[](/project/texture-test-1.png)
-[](/project/texture-test-2.png)
-[](/project/texture-test-3.png)
+![](/project/texture-test-1.png)
+![](/project/texture-test-2.png)
+![](/project/texture-test-3.png)
 
 **28/10/26** <br>
 *IDEATION* <br>
