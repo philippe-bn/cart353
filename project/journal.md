@@ -51,3 +51,7 @@ This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Counte
 
 **04/11/26** <br>
 I presented my research and work in progress. <br>
+
+**11/11/26**
+*IMPLEMENTATION*
+![alt text](/project/references/wip-index.png)
