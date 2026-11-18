@@ -1,3 +1,11 @@
+Entropy: thermodynamics
+![alt text](image.png)
+Phase space: every single point corresponds to a state, and evolves over time (has a direction); prey and predator example
+Chaos theory: singularities
+The butterfly effect: blue line is at the point where the system could go fully one way or another; in the process of intelligence, make decisions that lead to different outcomes
+Dialectical materialism
+Stephen Jay Gould
+
 The work of Ian Cheng: https://iancheng.com/
 Ian Cheng Interview: https://youtu.be/TO6Luilc4Bo?si=8JVjzeXSw_UMfJIR
 The AI of "Creatures": https://youtu.be/Y-6DzI-krUQ?si=BjZvlpGcVWGDpnTq
