@@ -51,10 +51,10 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
     return synthesized_texture
 
  #Load an example texture
-# sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')  # Replace with a valid URL or file path
-# sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')  # Replace with a valid URL or file path
-# sample_image = load_image('synthesized.png')  # Replace with a valid URL or file path
-# sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')  # Replace with a valid URL or file path
+# sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')
+# sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')
+# sample_image = load_image('synthesized.png')
+# sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')
 # sample_image = load_image('concrete-2316571_1280.jpg')
 # sample_image = load_image('istockphoto-481248302-612x612.jpg')
 sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp')
@@ -83,7 +83,7 @@ plt.axis('off')
 plt.subplot(1, 2, 2)
 plt.title('Synthesized Texture')
 plt.imshow(synthesized, cmap='gray')
-plt.imsave('synthesized.png', synthesized)
+plt.imsave('static/uploads/synthesized.png', synthesized)
 plt.axis('off')
 
 plt.show()

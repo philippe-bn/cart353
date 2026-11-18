@@ -52,6 +52,21 @@ This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Counte
 **04/11/26** <br>
 I presented my research and work in progress. <br>
 
-**11/11/26**
-*IMPLEMENTATION*
-![alt text](/project/references/wip-index.png)
+**11/11/26** <br>
+*IMPLEMENTATION* <br>
+![alt text](/project/references/wip-index.png) <br>
+
+**18/11/26** <br>
+*IMPLEMENTATION* <br>
+To-do list: <br>
+Backend <br>
+- Add a counter to how many iterations have been generated in HB python
+- Append to the filename saved in uploads this counter in HB python
+- Add a condition that the first iteration takes the realistic concrete image, every other is feedback in HB python
+- So save another synthesized.png in a place to retrieve for the feedback process? Or use the counter to select the previous one?
+- Retrieve user's information with help from Skyla's code
+- Use this to affect iteration? Have it select a different starting image? Blend?
+Frontend <br>
+- Set up timeline page
+- Style home page
+- Style timeline page
