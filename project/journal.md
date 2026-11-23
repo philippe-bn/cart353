@@ -1,5 +1,5 @@
 PROPOSAL PRESENTATION- **30/09/26** <br>
-I presented the proposal for my project (retrievable [here](project\proposal\)). <br>
+I presented the proposal for my project (retrievable [here](/project/proposal/CART353%20Project%20Proposal%20Presentation.pdf)). <br>
 
 1- **06/10/26** <br>
 *RESEARCH & DEVELOPMENT* <br>
@@ -47,10 +47,10 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 
 TOPIC PRESENTATION- **28/10/26** <br>
 *IDEATION* <br>
-This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures, retrievable [here](topics\aesthetics\)) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use. <br>
+This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures, retrievable [here](/topics/aesthetics/CART353%20Aesthetics%20Presentation.pdf)) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use. <br>
 
 WIP PRESENTATION- **04/11/26** <br>
-I presented my research and work in progress (retrievable [here](project\wip-presentation\)). <br>
+I presented my research and work in progress (retrievable [here](/project/wip-presentation/CART353%20Project%20Work-in-progress%20Presentation.pdf)). <br>
 
 6- **11/11/26** <br>
 *IMPLEMENTATION* <br>
