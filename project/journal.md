@@ -1,7 +1,7 @@
-1- **30/09/26** <br>
+**30/09/26** <br>
 I presented the proposal for my project. <br>
 
-2- **06/10/26** <br>
+1- **06/10/26** <br>
 *RESEARCH & DEVELOPMENT* <br>
 This week, I started with research about the various algorithms for texture generation. <br> 
 - I read the *Textures* text [here](https://visionbook.mit.edu/textures.html). 
@@ -18,11 +18,11 @@ I also met with someone on Facebook Marketplace who sold me a thermal receipt pr
 - It requires a USB cable which I would need to find (USB to USB), and I don't know if this will be enough to set up the connection.
 - I will need to ask Emile if he can help me "jailbreak" it, like he did with his.
 
-3- **07/10/26** <br>
+2- **07/10/26** <br>
 ![alt text](/project/references/hb-html.png) Succeeded at running HTML documentation of repo. <br>
 ![alt text](/project/references/hb-html-filelist.png) The repo indicates what each file accomplishes.
 
-4- **10/10/26** <br>
+3- **10/10/26** <br>
 *RESEARCH & DEVELOPMENT* <br>
 I met with Sabine on Saturday October 10th in the Computation Lab to discuss my project. <br>
 - I installed an ANSI C compiler.
@@ -30,7 +30,7 @@ I met with Sabine on Saturday October 10th in the Computation Lab to discuss my 
 - I installed the programs needed to run the C code.
 - I ran out of time... But Sabine found on the MIT *Textures* text I was a reading a CoLab implementation in Python. I will be using [this](https://colab.research.google.com/drive/1y-l8SEa-ALraDgbai5WavAYTDjKbg1AI?usp=sharing) instead. 
 
-**14/10/26** <br>
+4- **14/10/26** <br>
 *READING WEEK* <br>
 I worked on my project with Sabine early on in reading week so I figured I would keep experimenting when I returned. <br>
 
@@ -45,18 +45,18 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 ![](/project/texture-test-2.png) I tested the algorithm with a size of 512px x 512px.
 ![](/project/texture-test-3.png) I tested the algorithm with a size of 1024px x 1024px.
 
-6- **28/10/26** <br>
+**28/10/26** <br>
 *IDEATION* <br>
 This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use. <br>
 
 **04/11/26** <br>
 I presented my research and work in progress. <br>
 
-7- **11/11/26** <br>
+6- **11/11/26** <br>
 *IMPLEMENTATION* <br>
 ![alt text](/project/references/wip-index.png) <br>
 
-8- **18/11/26** <br>
+7- **18/11/26** <br>
 *IMPLEMENTATION* <br>
 To-do list: <br>
 Backend <br>
