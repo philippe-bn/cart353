@@ -1,4 +1,4 @@
-**30/09/26** <br>
+PROPOSAL PRESENTATION- **30/09/26** <br>
 I presented the proposal for my project. <br>
 
 1- **06/10/26** <br>
@@ -45,11 +45,11 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 ![](/project/texture-test-2.png) I tested the algorithm with a size of 512px x 512px.
 ![](/project/texture-test-3.png) I tested the algorithm with a size of 1024px x 1024px.
 
-**28/10/26** <br>
+TOPIC PRESENTATION- **28/10/26** <br>
 *IDEATION* <br>
 This week, I presented my topic (Queer Algorithmic Aesthetics and Digital Countercultures) as part of the week on *Algorithmic Aesthetics and Visual Design / Cultural Criticism of Digital Media / Cultural Impacts of Generative AI / History of Digital Culture*. Because these topics particularly interest me, I participated in class discussions about the politics of aesthetics. I will use these ideas in my project - paying attention particularly to the political ideas behind the aesthetics I use. <br>
 
-**04/11/26** <br>
+WIP PRESENTATION- **04/11/26** <br>
 I presented my research and work in progress. <br>
 
 6- **11/11/26** <br>
