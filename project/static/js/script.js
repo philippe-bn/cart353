@@ -6,7 +6,7 @@ async function displayConcreteIterations() {
         files.forEach((filename, i) => {
             placeConcreteIterations(filename, i)
         });
-        placeNewConcreteIteration(files[-1]); // not reading...
+        placeNewConcreteIteration(files[-1]); // not reading... change this to fetch a copy?
 
     } catch (err) {
         console.log(err)
