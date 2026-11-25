@@ -36,3 +36,35 @@ window.onload = function () {
     console.log("js is up and running");
     displayConcreteIterations();
 }
+
+// send an event to flask; flask adds one to this visitor's session counter
+async function log(event) {
+    await fetch("/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ event: event }),
+        keepalive: true
+    });
+}
+
+// count clicks
+addEventListener("click", () => log("clicks"));
+
+// count tab leaves
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) log("tab_leaves");
+});
+
+// Refresh the visitor's location and network details on every page load.
+async () => {
+    const d = await (await fetch("https://ipwho.is/")).json();
+    await fetch("/location", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            city: d.city,
+            region: d.region,
+            org: d.connection?.org
+        })
+    });
+};
