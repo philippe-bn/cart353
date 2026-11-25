@@ -76,4 +76,9 @@ Frontend <br>
 *IMPLEMENTATION* <br>
 To-do list: <br>
 Backend <br>
+- Retrieve session information like [Skyla did](https://github.com/BrownEyeGirl/cart351/tree/main/mini_project_1)
+- Get project running online (use Render?)
 Frontend <br>
+- Same as last week
+Physical <br>
+- Get printer working
