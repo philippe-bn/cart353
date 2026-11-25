@@ -1,26 +1,20 @@
-# Implementation of the Heeger and Bergen texture synthesis algorithm.
-# 2024
-#
-# https://visionbook.mit.edu/textures.html
+# Adapted from: Implementation of the Heeger and Bergen texture synthesis algorithm. 2024 https://visionbook.mit.edu/textures.html
 
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io, transform
 from skimage.color import rgb2gray, rgba2rgb
 from skimage.exposure import match_histograms
-
-# pyrtools is a library used for image processing, particularly useful for operations involving pyramids and wavelets.
-#pip install pyrtools
 import pyrtools as pt
 
-def load_image(image_path):
+def load_image(image_path, count):
     img = io.imread(image_path)
-    # img_rgb = rgba2rgb(img)
-    # return rgb2gray(img_rgb)  # Convert to grayscale for simplicity
-    return rgb2gray(img)  # Convert to grayscale for simplicity
-
-def build_pyramid(image, max_levels): # this is not used, but nice to have it here for future reference
-    return pt.pyramids.LaplacianPyramid(image, height=max_levels)
+    if (count == 0):
+        return rgb2gray(img)
+    else:
+        img_rgb = rgba2rgb(img)
+        return rgb2gray(img_rgb)
+    
 
 def build_steerable_pyramid(image, max_levels, orientations):
     return pt.pyramids.SteerablePyramidFreq(image, height=max_levels, order=orientations)
@@ -50,17 +44,20 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
     synthesized_texture = histogram_matching(synthesized_texture, input_texture)
     return synthesized_texture
 
-def execute():
+def execute(count):
     #Load an example texture
     # sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')
     # sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')
-    # sample_image = load_image('synthesized.png')
+
     # sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')
     # sample_image = load_image('concrete-2316571_1280.jpg')
     # sample_image = load_image('istockphoto-481248302-612x612.jpg')
-    sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp')
+    if (count == 0):
+        sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp', count)
+    else:
+        sample_image = load_image(f'static/uploads/synthesized_{count-1}.png', count)
 
-    sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity, 2.5 seconds
+    sample_image = transform.resize(sample_image, (256, 256))
 
     Niterations = 10 # 10 with basic size is 2.5 seconds, 100 is 10 seconds (so 4x longer)
     synthesized = synthesis(sample_image, Niterations)
@@ -78,6 +75,5 @@ def execute():
     # plt.axis('off')
     # plt.show()
 
-    plt.imsave('static/uploads/synthesized.png', synthesized, cmap='gray')
-    
+    plt.imsave(f'static/uploads/synthesized_{count}.png', synthesized, cmap='gray')
     return

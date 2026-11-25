@@ -41,9 +41,9 @@ I implemented the Python implementation of the Heeber Bergen Texture Analysis Sy
 - I tried to implement a feedback process where the generated texture image reenters the algorithm: it wasn't working because the image was RGBA instead of RGB, so I read about matplotlib and skimage [here](https://www.geeksforgeeks.org/python/reading-images-in-python/), and [here](https://scikit-image.org/docs/stable/user_guide/transforming_image_data.html), and added an import for rgba2rgb from skimage
 
 ![](/project/realistic-concrete-wall-texture-free-photo.webp) I found this free texture image I wanted to play with [here](https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70).
-![](/project/texture-test-1.png) I tested the algorithm with a size of 256px x 256px.
-![](/project/texture-test-2.png) I tested the algorithm with a size of 512px x 512px.
-![](/project/texture-test-3.png) I tested the algorithm with a size of 1024px x 1024px.
+![](/project/texture-test-1.png) I tested the algorithm with a size of 256px x 256px: with my computer plugged in, it took about 2.5 seconds for the picture to generate.
+![](/project/texture-test-2.png) I tested the algorithm with a size of 512px x 512px: this tripled the time, up to 7.5 seconds for the picture to generate, without improving drastically the aesthetic result.
+![](/project/texture-test-3.png) I tested the algorithm with a size of 1024px x 1024px: this took about a minute.
 
 TOPIC PRESENTATION- **28/10/26** <br>
 *IDEATION* <br>
