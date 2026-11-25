@@ -17,15 +17,6 @@ def index():
     return render_template("index.html", 
                            output=output)
 
-# @app.route("/catForm",methods = ['POST'])
-# def catForm():
-#     #key is the same as in the form :)
-#     uploadedfile = request.files['the_file']
-#     #save file to uploads folder
-    # uploadedfile.save(os.path.join(app.config['UPLOAD_FOLDER'],uploadedfile.filename)) # writes the bytes to disk
-#     app.logger.info(uploadedfile.filename)
-#     return json.dumps({"filename": uploadedfile.filename})
-
 # Handle past uploaded images
 @app.route('/pastUploads')
 def pastUploads():
@@ -34,7 +25,7 @@ def pastUploads():
     return img_list
 
 def counter():
-    # Source - https://stackoverflow.com/a/29733650
+    # Adapted from: Source - https://stackoverflow.com/a/29733650
     # Posted by MikeTGW
     # Retrieved 2026-11-25, License - CC BY-SA 3.0
 

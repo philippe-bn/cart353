@@ -15,7 +15,6 @@ def load_image(image_path, count):
         img_rgb = rgba2rgb(img)
         return rgb2gray(img_rgb)
     
-
 def build_steerable_pyramid(image, max_levels, orientations):
     return pt.pyramids.SteerablePyramidFreq(image, height=max_levels, order=orientations)
 
@@ -45,35 +44,13 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
     return synthesized_texture
 
 def execute(count):
-    #Load an example texture
-    # sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')
-    # sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')
-
-    # sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')
-    # sample_image = load_image('concrete-2316571_1280.jpg')
-    # sample_image = load_image('istockphoto-481248302-612x612.jpg')
     if (count == 0):
-        sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp', count)
+        sample_image = load_image('original.webp', count)
     else:
         sample_image = load_image(f'static/uploads/synthesized_{count-1}.png', count)
 
     sample_image = transform.resize(sample_image, (256, 256))
-
     Niterations = 10 # 10 with basic size is 2.5 seconds, 100 is 10 seconds (so 4x longer)
     synthesized = synthesis(sample_image, Niterations)
-
-    # Display results
-    # plt.figure(figsize=(12, 6))
-    # plt.subplot(1, 2, 1)
-    # plt.title('Original Texture')
-    # plt.imshow(sample_image, cmap='gray')
-    # plt.axis('off')
-
-    # plt.subplot(1, 2, 2)
-    # plt.title('Synthesized Texture')
-    # plt.imshow(synthesized, cmap='gray')
-    # plt.axis('off')
-    # plt.show()
-
     plt.imsave(f'static/uploads/synthesized_{count}.png', synthesized, cmap='gray')
     return
