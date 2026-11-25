@@ -14,3 +14,4 @@ Affect; how we feel before we understand why we do
 Connecting to past experiences, finding that feeling; star wars chip expo, dtlj swings, disney band
 
 Kinect; specific port; card included in sensor kit; usb port
+

@@ -17,3 +17,11 @@
 
 More on forces:
 - a = F / m (acceleration = force / mass) EXCEPT gravity (scales with mass)
+
+Integration Basics: https://gafferongames.com/post/integration_basics/
+Particle Systems: https://natureofcode.com/particles/
+Simulation and Numerical Integration: https://physics.umd.edu/hep/drew/numerical_integration/
+Euler and Verlet Integration for Particle Physics: https://www.gorillasun.de/blog/euler-and-verlet-integration-for-particle-physics/
+Collision Detection: https://happycoding.io/tutorials/processing/collision-detection
+Particle Engine github repository: https://github.com/jasonmayes/Particle-Engine
+Programming Chaos video on Particle Swarms: https://www.youtube.com/watch?v=G0RQRmwoiD0

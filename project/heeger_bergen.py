@@ -50,40 +50,34 @@ def synthesis(input_texture, iterations=5, max_levels=3, orientations=6):
     synthesized_texture = histogram_matching(synthesized_texture, input_texture)
     return synthesized_texture
 
- #Load an example texture
-# sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')
-# sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')
-# sample_image = load_image('synthesized.png')
-# sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')
-# sample_image = load_image('concrete-2316571_1280.jpg')
-# sample_image = load_image('istockphoto-481248302-612x612.jpg')
-sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp')
+def execute():
+    #Load an example texture
+    # sample_image = load_image('http://people.csail.mit.edu/torralba/share/course/triangle.jpg')
+    # sample_image = load_image('https://i0.wp.com/picjumbo.com/wp-content/uploads/realistic-concrete-wall-texture-free-photo.jpg?w=2210&quality=70')
+    # sample_image = load_image('synthesized.png')
+    # sample_image = load_image('realistic-concrete-wall-texture-free-photo.webp')
+    # sample_image = load_image('concrete-2316571_1280.jpg')
+    # sample_image = load_image('istockphoto-481248302-612x612.jpg')
+    sample_image = load_image('close-up-rough-speckled-concrete-texture-featuring-irregular-grainy-pattern-ideal-backgrounds-design-textures-360187777.webp')
 
-sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity, 2.5 seconds
-# sample_image = transform.resize(sample_image, (512, 512))  # Resize for simplicity, testing higher resize, 7.5 seconds
+    sample_image = transform.resize(sample_image, (256, 256))  # Resize for simplicity, 2.5 seconds
 
-# plt.imshow(sample_image, cmap='gray')
-# plt.show()
-# Let's check the steerable pyramid decomposition of the sample image
+    Niterations = 10 # 10 with basic size is 2.5 seconds, 100 is 10 seconds (so 4x longer)
+    synthesized = synthesis(sample_image, Niterations)
 
-# compute the pyramid with 2 scales and 4 orientations per scale:
-original_pyramid = build_steerable_pyramid(sample_image, 2, 4)
+    # Display results
+    # plt.figure(figsize=(12, 6))
+    # plt.subplot(1, 2, 1)
+    # plt.title('Original Texture')
+    # plt.imshow(sample_image, cmap='gray')
+    # plt.axis('off')
 
-# # the next function plots the output of all the filters
-#pt.pyrshow(original_pyramid.pyr_coeffs)
-Niterations = 10 # 10 with basic size is 2.5 seconds, 100 is 10 seconds (so 4x longer)
-synthesized = synthesis(sample_image, Niterations)
-# Display results
-plt.figure(figsize=(12, 6))
-plt.subplot(1, 2, 1)
-plt.title('Original Texture')
-plt.imshow(sample_image, cmap='gray')
-plt.axis('off')
+    # plt.subplot(1, 2, 2)
+    # plt.title('Synthesized Texture')
+    # plt.imshow(synthesized, cmap='gray')
+    # plt.axis('off')
+    # plt.show()
 
-plt.subplot(1, 2, 2)
-plt.title('Synthesized Texture')
-plt.imshow(synthesized, cmap='gray')
-plt.imsave('static/uploads/synthesized.png', synthesized)
-plt.axis('off')
-
-plt.show()
+    plt.imsave('static/uploads/synthesized.png', synthesized, cmap='gray')
+    
+    return

@@ -70,3 +70,6 @@ Frontend <br>
 - Set up timeline page
 - Style home page
 - Style timeline page
+
+8- **25/11/26** <br>
+*IMPLEMENTATION* <br>

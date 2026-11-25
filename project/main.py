@@ -1,6 +1,7 @@
 import os
 import json
 from flask import Flask, request, redirect, url_for, render_template
+import heeger_bergen
 
 app = Flask(__name__)
 
@@ -10,7 +11,8 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 # 16 MB limit
 
 @app.route('/')
-def index():
+def index():    
+    heeger_bergen.execute()
     return render_template("index.html")
 
 # @app.route("/catForm",methods = ['POST'])
@@ -30,3 +32,4 @@ def pastUploads():
     return img_list
 
 app.run(debug = True)
+
