@@ -69,13 +69,19 @@ def counter():
 
     return count, output
 
-# Add one to an event (clicks or tab_leaves), store in the session, return totals
-@app.route("/log", methods=["POST"])
-def log():
-    event = (request.get_json(silent=True) or {}).get("event")
-    if event in ("clicks", "tab_leaves"):  # ignore anything else
-        session[event] = session.get(event, 0) + 1
-    return jsonify(read())
+# # Add one to an event (clicks or tab_leaves), store in the session, return totals
+# @app.route("/log", methods=["POST"])
+# def log():
+#     event = (request.get_json(silent=True) or {}).get("event")
+#     if event in ("clicks", "tab_leaves"):  # ignore anything else
+#         session[event] = session.get(event, 0) + 1
+#     return jsonify(read())
+
+# @app.route("/log")
+# def log():
+#     print(request)
+#     read()
+#     return("returning")
 
 # Read-only route for the buttons (does not count as a click)
 @app.route("/info")
@@ -93,5 +99,10 @@ def location():
 
     return jsonify(read())
 
-app.run(debug = True)
+# app.run(debug = True)
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port="port")
 

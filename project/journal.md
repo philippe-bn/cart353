@@ -82,3 +82,5 @@ Frontend <br>
 - Same as last week
 Physical <br>
 - Get printer working
+UPDATES:
+- Got the printer working by downloading the driver [here](https://www.crs-usa.com/products/printers/retired-printer-models/snbc-printer-btp-r880np-black)

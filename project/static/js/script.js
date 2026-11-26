@@ -37,23 +37,23 @@ window.onload = function () {
     displayConcreteIterations();
 }
 
-// send an event to flask; flask adds one to this visitor's session counter
-async function log(event) {
-    await fetch("/log", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ event: event }),
-        keepalive: true
-    });
-}
+// // send an event to flask; flask adds one to this visitor's session counter
+// async function log(event) {
+//     await fetch("/log", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ event: event }),
+//         keepalive: true
+//     });
+// }
 
 // count clicks
-addEventListener("click", () => log("clicks"));
+// addEventListener("click", () => log("clicks"));
 
 // count tab leaves
-document.addEventListener("visibilitychange", () => {
-    if (document.hidden) log("tab_leaves");
-});
+// document.addEventListener("visibilitychange", () => {
+//     if (document.hidden) log("tab_leaves");
+// });
 
 // Refresh the visitor's location and network details on every page load.
 async () => {
